@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Larusso - Cadastro</title>
+</head>
+
+<body bgcolor="#CCCCCC">
+    <p align="left">
+        <font size="7" face="Agency FB"><b><i><u>CADASTRO</u></i></b></font>
+
+    </p></br />
+
+
+    <form>
+        <p align="left">
+            <font color="#666699" size="5" face="Agency FB"><b><i><u>PESSOAL</u></i></b></font>
+        </p>
+
+        <p>
+            <font size="4" face="Agency FB">
+                <b>
+                    <p>
+                        <label>Nome:</label>
+                        <input type="text" name="nome" size="38" placeholder="Nome completo" />
+                        <label>CPF:</label>
+                        <input type="text" name="cpf" placeholder="Apenas números" maxlength="11" size="11" />
+                        <label>Sexo:</label>
+                        <select name="uf">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option disabled selected>Selecione</option>
+                        </select>
+                    </p><br />
+                    <label>E-mail:</label>
+                    <input type="email" name="email" size="25" placeholder="Seu melhor e-mail" />
+                    <label>Usuário:</label>
+                    <input type="text" name="login" size="16" placeholder="Ex: gertrudes007" />
+                    <label>Senha:</label>
+                    <input type="password" name="senha" placeholder="Até 8 caracteres" maxlength="8" size="10" />
+                </b>
+            </font>
+        </p><br />
+
+
+        <p align="left">
+            <font color="#666699" size="5" face="Agency FB"><b><i><u>ENDEREÇO</u></i></b></font>
+        </p>
+
+        <p>
+            <font size="4" face="Agency FB">
+                <b>
+                    <p>
+                        <label>UF:</label>
+                        <select name="uf">
+                            <option>ES</option>
+                            <option>MG</option>
+                            <option>RJ</option>
+                            <option>SP</option>
+                            <option disabled selected>Selecione</option>
+                        </select>
+                        <label>Cidade:</label>
+                        <input type="text" name="cidade" size="24" placeholder="Cidade" />
+                        <label>Bairro:</label>
+                        <input type="text" name="bairro" size="24" placeholder="Bairro" />
+                    </p><br />
+                    <label>Rua:</label>
+                    <input type="text" name="rua" size="24" placeholder="Rua" />
+                    <label>Número:</label>
+                    <input type="text" name="numero" placeholder="Número" size="5" />
+                    <label>Complemento:</label>
+                    <input type="text" name="complemento" placeholder="EX: Casa..." size="17" />
+                </b>
+            </font>
+        </p><br />
+
+
+        <p align="left">
+            <font color="#666699" size="5" face="Agency FB"><b><i><u>SOBRE VOCÊ</u></i></b></font>
+        </P>
+
+        <p>
+            <font size="4" face="Agency FB">
+                <b>
+                    <p>
+                        <label>Selecione os carros de sua preferência:</label><br />
+                    <p>
+                        <input type="checkbox" name="tipoCarro" value="Hatch" />Hatch<br />
+                        <input type="checkbox" name="tipoCarro" value="Sedan" />Sedan<br />
+                        <input type="checkbox" name="tipoCarro" value="SUV" />SUV<br />
+                        <input type="checkbox" name="tipoCarro" value="Crossover" />Crossover<br />
+                        <input type="checkbox" name="tipoCarro" value="Minivan" />Minivan<br />
+                        <input type="checkbox" name="tipoCarro" value="Picape" />Picape<br />
+                        <input type="checkbox" name="tipoCarro" value="Wagon" />Wagon<br />
+                        <input type="checkbox" name="tipoCarro" value="Diesel" />Diesel<br />
+                        <input type="checkbox" name="tipoCarro" value="Elétrico" />Elétrico<br />
+                        <input type="checkbox" name="tipoCarro" value="Híbrido" />Híbrido<br />
+                        <input type="checkbox" name="tipoCarro" value="Conversível" />Conversível<br />
+                        <input type="checkbox" name="tipoCarro" value="Cupê" />Cupê<br />
+                        <input type="checkbox" name="tipoCarro" value="Luxo" />Luxo<br />
+                    </p>
+                    <p>
+                        Não sabe quais carros selecionar? Clique <a href="guia_carros.html" target="_blank">aqui</a> e
+                        confira nosso guia sobre tipos de carros!
+                    </p>
+                </b>
+                <b>
+                    <p>
+                        <label>Qual cor de carro devemos recomendar?</label>
+                    </p>
+                    <input type="radio" name="corCarro" value="corPreta" />Preto<br />
+                    <input type="radio" name="corCarro" value="corBranca" />Branco<br />
+                    <input type="radio" name="corCarro" value="corPrata" />Prata<br />
+                    <input type="radio" name="corCarro" value="corColirido" />Colorido<br />
+                </b>
+           
+            
+            <b>
+                <p>
+                    <label>Biografia:</label><br />
+                    <textarea cols="85" rows="10" name="comentario" placeholder="Digite algo sobre você..."></textarea>
+                </p>
+            </b>
+        </font>
+        </p>
+
+        <input type="reset" />
+        <input type="button" value="Cadastrar" />
+    </form>
+</body>
+
+</html>
